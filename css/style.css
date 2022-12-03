@@ -5,6 +5,14 @@
 }
 
 /* -> classes for logo description*/
+.top-bar {
+  display: flex;
+  border: 1px solid;
+  height: 80px;
+  background-color: rgb(255, 0, 34);
+  margin-bottom: 50px;
+}
+
 .logo {
   font-family: Raleway;
   font-size: 1.625rem;

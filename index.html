@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <style>
       body {
@@ -19,56 +26,72 @@
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <p class="logo"><span class="blue">Web</span>Studio</p>
-        <a class="header-nav" href="index.html">Agencja</a>
-        <a class="header-nav" href="portfolio.html">Portfolio</a>
-        <a class="header-nav" href="portfolio.html">Kontakt</a>
-      </nav>
-      <a class="header-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="header-nav" href="tel:+48111111111">+48 111 111 111</a>
-    </header>
-    <main>
-      <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="order-service" type="button">Zamów usługe</button>
+    <nav class="top-background">
+      <section class="wrapper site-bar">
+        <div class="site-nav">
+          <h2 class="logo"><span class="blue">Web</span>Studio</h2>
+          <div class="nav-main">
+            <a class="header-nav" href="index.html">Agencja</a>
+            <a class="header-nav" href="portfolio.html">Portfolio</a>
+            <a class="header-nav" href="portfolio.html">Kontakt</a>
+          </div>
+        </div>
+        <div>
+          <a class="header-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="header-nav gap-between" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
       </section>
-      <section>
-        <ul>
+    </nav>
+    <main>
+      <section class="billboard">
+        <div>
+          <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
+          <button class="order-service" type="button">Zamów usługe</button>
+        </div>
+      </section>
+      <article class="wrapper space">
+        <ul class="article-flex">
           <li>
-            <h3 class="article-title">LOREM IPSUM</h3>
-            <p class="article">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
+            <div>
+              <h3 class="article-title">LOREM IPSUM</h3>
+              <p class="article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                sodales dui. Interdum et malesuada
+              </p>
+            </div>
           </li>
           <li>
-            <h3 class="article-title">LOREM IPSUM</h3>
-            <p class="article">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
+            <div>
+              <h3 class="article-title">LOREM IPSUM</h3>
+              <p class="article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                sodales dui. Interdum et malesuada
+              </p>
+            </div>
           </li>
           <li>
-            <h3 class="article-title">LOREM IPSUM</h3>
-            <p class="article">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
+            <div>
+              <h3 class="article-title">LOREM IPSUM</h3>
+              <p class="article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                sodales dui. Interdum et malesuada
+              </p>
+            </div>
           </li>
           <li>
-            <h3 class="article-title">LOREM IPSUM</h3>
-            <p class="article">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-              sodales dui. Interdum et malesuada
-            </p>
+            <div>
+              <h3 class="article-title">LOREM IPSUM</h3>
+              <p class="article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                sodales dui. Interdum et malesuada
+              </p>
+            </div>
           </li>
         </ul>
-      </section>
-      <section>
+      </article>
+      <section class="wrapper space">
         <h2 class="header-title">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="flex-wrap">
           <li>
             <img src="images/service/computer.jpg" alt="Ktoś pisze na kompuetrze" width="370" />
           </li>
@@ -88,72 +111,81 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2 class="header-title">Nasz zespół</h2>
-        <ul>
-          <li>
-            <figure>
-              <img
-                src="images/team/productDesigner.jpg"
-                width="270"
-                alt="Mężczyzna z brodą, w okularach i brązowej koszuli"
-              />
-              <figcaption>
-                <b class="team-person">John Doe</b>
-                <p class="team-position">Product Designer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/team/frontendDeveloper.jpg"
-                width="270"
-                alt="Kobieta, bolndynka, w okularach i marynarce"
-              />
-              <figcaption>
-                <b class="team-person">John Doe</b>
-                <p class="team-position">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/team/marketing.jpg"
-                width="270"
-                alt="Mężczyzna w jasnej koszuli z zarostem"
-              />
-              <figcaption>
-                <b class="team-person">John Doe</b>
-                <p class="team-position">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="images/team/secoundFrontendDeveloper.jpg"
-                width="270"
-                alt="Mężczyzna z brodą, w okularach i czarnej koszulce"
-              />
-              <figcaption>
-                <b class="team-person">John Doe</b>
-                <p class="team-position">Frontend Developer</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+      <section class="wrapper">
+        <div class="team-background">
+          <h2 class="header-title">Nasz zespół</h2>
+          <div>
+            <!-- <h2 class="header-title">Nasz zespół</h2> -->
+            <ul class="team-flex">
+              <li>
+                <figure>
+                  <img
+                    src="images/team/productDesigner.jpg"
+                    width="270"
+                    alt="Mężczyzna z brodą, w okularach i brązowej koszuli"
+                  />
+                  <figcaption>
+                    <b class="team-person">John Doe</b>
+                    <p class="team-position">Product Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="images/team/frontendDeveloper.jpg"
+                    width="270"
+                    alt="Kobieta, bolndynka, w okularach i marynarce"
+                  />
+                  <figcaption>
+                    <b class="team-person">John Doe</b>
+                    <p class="team-position">Frontend Developer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="images/team/marketing.jpg"
+                    width="270"
+                    alt="Mężczyzna w jasnej koszuli z zarostem"
+                  />
+                  <figcaption>
+                    <b class="team-person">John Doe</b>
+                    <p class="team-position">Marketing</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img
+                    src="images/team/secoundFrontendDeveloper.jpg"
+                    width="270"
+                    alt="Mężczyzna z brodą, w okularach i czarnej koszulce"
+                  />
+                  <figcaption>
+                    <b class="team-person">John Doe</b>
+                    <p class="team-position">Frontend Developer</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <p class="logo"><span class="blue">Web</span><span class="white">Studio</span></p>
-      <address class="address">
-        m. Warszawa, Aleje Jerozolimskie 21 <br />
-        <a class="address color-gradient" href="mailto:info@devstudio.com"> info@devstudio.com </a>
-        <br />
-        <a class="address color-gradient" href="tel:+48111111111">+48 111 111 111</a>
-      </address>
+    <footer class="footer-background">
+      <div class="footer wrapper">
+        <p class="logo"><span class="blue">Web</span><span class="white">Studio</span></p>
+        <address class="address">
+          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+          <a class="address color-gradient" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <br />
+          <a class="address color-gradient" href="tel:+48111111111">+48 111 111 111</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

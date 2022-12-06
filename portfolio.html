@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <style>
       body {
@@ -19,33 +26,32 @@
     </style>
   </head>
   <body>
-    <section class="top-bar">
-      <nav>
-        <p class="logo"><span class="blue">Web</span>Studio</p>
-        <div>
-          <a class="header-nav" href="index.html">Agencja</a>
-          <a class="header-nav" href="portfolio.html">Portfolio</a>
-          <a class="header-nav" href="portfolio.html">Kontakt</a>
+    <nav class="top-background">
+      <section class="wrapper site-bar">
+        <div class="site-nav">
+          <h2 class="logo"><span class="blue">Web</span>Studio</h2>
+          <div class="nav-main">
+            <a class="header-nav" href="index.html">Agencja</a>
+            <a class="header-nav" href="portfolio.html">Portfolio</a>
+            <a class="header-nav" href="portfolio.html">Kontakt</a>
+          </div>
         </div>
-      </nav>
-
-      <div>
-        <a class="header-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="header-nav" href="tel:+48111111111">+48 111 111 111</a>
-      </div>
-    </section>
-    <main>
-      <header>
-        <nav>
-          <button class="buttons" type="button">Wszystkie</button>
-          <button class="buttons" type="button">Strony</button>
-          <button class="buttons" type="button">Aplikacje</button>
-          <button class="buttons" type="button">Dizajn</button>
-          <button class="buttons" type="button">Marketing</button>
-        </nav>
+        <div>
+          <a class="header-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="header-nav gap-between" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
+      </section>
+    </nav>
+    <main class="wrapper">
+      <header class="portfolio-buttons">
+        <button class="buttons" type="button">Wszystkie</button>
+        <button class="buttons" type="button">Strony</button>
+        <button class="buttons" type="button">Aplikacje</button>
+        <button class="buttons" type="button">Dizajn</button>
+        <button class="buttons" type="button">Marketing</button>
       </header>
-      <section>
-        <ul>
+      <section class="space">
+        <ul class="flex-wrap">
           <li>
             <figure>
               <img
@@ -59,7 +65,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img
@@ -73,7 +78,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img
@@ -87,7 +91,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img src="./images/portfolio/headphones.jpg" alt="słuchawki" width="370" />
@@ -97,7 +100,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img src="./images/portfolio/boxes.jpg" alt="Dwa pudełka" width="370" />
@@ -107,7 +109,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img
@@ -121,7 +122,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img
@@ -135,7 +135,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img
@@ -149,7 +148,6 @@
               </figcaption>
             </figure>
           </li>
-
           <li>
             <figure>
               <img
@@ -166,14 +164,18 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <p class="logo"><span class="blue">Web</span><span class="white">Studio</span></p>
-      <address class="address">
-        m. Warszawa, Aleje Jerozolimskie 21 <br />
-        <a class="address color-gradient" href="mailto:info@devstudio.com"> info@devstudio.com </a>
-        <br />
-        <a class="address color-gradient" href="tel:+48111111111">+48 111 111 111</a>
-      </address>
+    <footer class="footer-background">
+      <div class="footer wrapper">
+        <p class="logo"><span class="blue">Web</span><span class="white">Studio</span></p>
+        <address class="address">
+          <p>m. Warszawa, Aleje Jerozolimskie 21</p>
+          <a class="address color-gradient" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <br />
+          <a class="address color-gradient" href="tel:+48111111111">+48 111 111 111</a>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

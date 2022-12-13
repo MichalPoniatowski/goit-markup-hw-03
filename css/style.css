@@ -106,6 +106,9 @@
 /* END NAVIGATION BUTTONS IN PORTFOLIO */
 
 /* PORTFOLIO PROJECT - PHOTOS */
+.flex-wrap img {
+  vertical-align: middle;
+}
 
 .flex-wrap {
   display: flex;
@@ -265,6 +268,9 @@
   margin: 0;
   padding: 0 0 30px 0;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-person {
@@ -304,6 +310,7 @@
 .footer {
   padding: 60px 0 60px 215px;
 }
+
 .footer p {
   margin-bottom: 20px;
 }
@@ -320,8 +327,21 @@
   color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
   text-decoration: none;
-  background-color: burlywood;
   max-height: 81px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 5px;
+}
+
+.address p {
+  margin: 0;
+  padding: 0;
+}
+
+.address a {
+  display: block;
 }
 
 .color-gradient {

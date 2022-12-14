@@ -5,9 +5,26 @@
   --brand-black: rgb(33, 33, 33);
   --brand-grey: rgb(117, 117, 117);
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 0 215px;
 }
 
@@ -18,6 +35,7 @@
   color: rgb(0, 0, 0);
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 .blue {
   color: var(--brand-blue);
@@ -45,15 +63,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border-bottom: 1px solid rgb(236, 236, 236); */
 }
 
 .site-nav {
   display: flex;
   align-items: center;
-}
-.site-nav h2 {
-  margin-right: 93px;
 }
 
 .nav-main {
@@ -61,6 +75,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .gap-between {
   margin-left: 50px;
 }
@@ -106,32 +121,19 @@
 /* END NAVIGATION BUTTONS IN PORTFOLIO */
 
 /* PORTFOLIO PROJECT - PHOTOS */
-.flex-wrap img {
-  vertical-align: middle;
-}
 
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  list-style: none;
-  margin: 0 auto; /* Czemu musze to ustawic skoro jest wgrany standar wymiarowania 
-  box'ów/ kontenerów? */
-  padding: 0; /* Czemu musze to ustawic skoro jest wgrany standar wymiarowania 
-  box'ów/ kontenerów? */
+  margin: 0 auto;
+  padding: 0;
   justify-content: flex-start;
   width: 100%;
 }
 
-.flex-wrap figure {
-  margin: 0;
-  /* outline: 1px solid rgb(237, 100, 175); */
-  /* width: calc((100%-60px) / 3); */
-}
-
 .flex-wrap figcaption {
   outline: 1px solid #eeeeee;
-  margin: 0 0 0 0;
   padding: 20px 24px 20px 24px;
 }
 
@@ -141,7 +143,6 @@
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--brand-black);
-  margin: 0;
   margin: 0 0 4px 0;
 }
 
@@ -151,14 +152,13 @@
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--brand-grey);
-  margin: 0;
   margin: 4px 0 0 0;
 }
-/* PORTFOLIO PROJECT - PHOTOS */
+/* END PORTFOLIO PROJECT - PHOTOS */
 
 /*INDEX HTML - WEB STUDIO*/
 
-/* ->Button "Zamów usługe"*/
+/* BUTTON "Zamów usługe"*/
 .order-service {
   background-color: var(--brand-blue);
   color: rgb(255, 255, 255);
@@ -169,8 +169,8 @@
   border: none;
   border-radius: 4px;
   padding: 10px 40px;
-  margin: 0;
 }
+
 .order-service:hover,
 .order-service:focus {
   background-color: rgb(245, 244, 250);
@@ -178,26 +178,19 @@
   cursor: pointer;
 }
 
-/*Button "Zamów usługe" <-*/
+/* END BUTTON "Zamów usługe" */
 
 .billboard {
   background-color: #2f303a;
   font-family: Roboto;
   font-size: 2.75rem;
   font-weight: 900;
-  line-height: 5.5rem; /* Według firmy 60px czyli 3.t5 rem ale przy tej wartości nie 
-  zgadza sie to z tym co faktycznie powinno być wyświetlene - pyt.4 
-  dokłądnie opisałem ten case */
+  line-height: 5.5rem;
   letter-spacing: 0.06em;
   text-align: center;
   color: rgb(255, 255, 255);
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 200px 0;
-}
-
-.billboard h1 {
-  margin: 0;
 }
 
 .header-title {
@@ -209,19 +202,12 @@
   text-align: center;
   margin: 0 0 50px 0;
 }
-/*classes for article lorem....*/
+
+/* CLASSES FOR ARTICLE LOREM */
 .article-flex {
-  list-style: none;
   display: flex;
   gap: 30px;
-  padding: 0;
-  margin: 0;
 }
-
-/* .article-flex h3 .article-flex p {
-  padding: 0;
-  margin: 0;
-} */
 
 .article-header {
   font-size: 0.875rem;
@@ -236,8 +222,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  margin: 0;
-  padding: 0;
 }
 
 .article-title {
@@ -247,25 +231,20 @@
   letter-spacing: 0.03em;
   text-align: left;
   margin: 89px 0 10px 0;
-  padding: 0;
 }
 
-/*classes for article lorem....*/
+/* END CLASSES FOR ARTICLE LOREM */
 
-/*->Classes for team*/
+/* CLASSES FOR TEAM */
 
 .team-flex {
-  list-style: none;
   display: flex;
   gap: 30px;
-  padding: 0;
-  margin: 0;
   justify-content: flex-start;
   width: 100%;
 }
 
 .team-flex figure {
-  margin: 0;
   padding: 0 0 30px 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -296,6 +275,7 @@
 
 .team-background {
   background-color: rgb(245, 244, 250);
+  width: 100%;
   padding: 94px 0 94px 0;
 }
 
@@ -311,7 +291,7 @@
   padding: 60px 0 60px 215px;
 }
 
-.footer p {
+.margin20 {
   margin-bottom: 20px;
 }
 
@@ -333,15 +313,6 @@
   margin: 0;
   padding: 0;
   gap: 5px;
-}
-
-.address p {
-  margin: 0;
-  padding: 0;
-}
-
-.address a {
-  display: block;
 }
 
 .color-gradient {
